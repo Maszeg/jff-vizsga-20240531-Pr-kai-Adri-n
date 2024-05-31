@@ -1,0 +1,14 @@
+<div>
+  <form>
+    <label>Téglalap egyik oldala</label>
+    <input [ngModel]="a" type="number">
+
+    <label>Téglalap másik oldala</label>
+    <input [ngModel]="b" type="number">
+
+    <button type="button" (click)="keruletSzamitas(a, b)">Számold ki a kerületet</button>
+    <button type="button" (click)="teruletSzamitas(a, b)">Számold ki a kerületet</button>
+  </form>
+  Kerület: {{kerulet}}
+  Terület: {{terulet}}
+</div>
